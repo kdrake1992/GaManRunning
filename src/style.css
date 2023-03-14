@@ -1,0 +1,72 @@
+/* Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background-image: linear-gradient(#e26c33, #df5e3a, #302043,black);
+    
+    height: 125px;
+    width: 100%;
+}
+
+/* Mid */
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Logo at the start */
+#mainLogo {
+    width: 100%;
+}
+
+.middle button {
+    background-color: white;
+
+    font-size: 16px;
+    height: 50px;
+    width: 100px;
+    padding: 5px 20px;
+    margin: 0px 20px;
+
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color:  black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 2px;
+  
+    height: 25px;
+    width: 100%;
+  
+    text-align: center;
+}  
+
+.footer a {
+    color: white;
+}
+
+/* Mobile screen */
+@media only screen and (max-width: 600px) {
+    /* .square {
+      padding: .7em;
+    } */
+}
