@@ -1,4 +1,11 @@
-export default function mid(mid) {
+import jpHome from "./jpHome";
+import enHome from "./enHome";
+
+export default function mid(header, mid) {
+    // Reset
+    // header.textContent = '';
+    // mid.textContent = '';
+
     // Create language option panel
     const choice = document.createElement('div');
     choice.classList.add('choice')
@@ -13,4 +20,15 @@ export default function mid(mid) {
     choice.appendChild(nihongo);
 
     mid.appendChild(choice);
+
+    // Event listeners
+    eng.addEventListener('click', () => {
+        choice.remove();
+        enHome(mid);
+    })
+
+    nihongo.addEventListener('click', () => {
+        choice.remove();
+        jpHome(mid)
+    })
 }
