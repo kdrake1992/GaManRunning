@@ -24,11 +24,11 @@ export default function mid(header, mid) {
     // Event listeners
     eng.addEventListener('click', () => {
         choice.remove();
-        enHome(mid);
+        enHome(header, mid);
     })
 
     nihongo.addEventListener('click', () => {
         choice.remove();
-        jpHome(mid)
+        jpHome(header, mid)
     })
 }

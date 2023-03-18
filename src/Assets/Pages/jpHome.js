@@ -1,4 +1,6 @@
-export default function jpHome(mid) {
+import head from './head';
+
+export default function jpHome(header, mid) {
 
     const underConstruction = document.createElement('div');
     underConstruction.innerHTML = '工事中';
