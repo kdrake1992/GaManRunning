@@ -20,6 +20,12 @@ body {
     width: 100%;
 }
 
+#navBar {
+    display: flex;
+
+    background-color: transparent;
+}
+
 /* Mid */
 .middle {
     display: flex;

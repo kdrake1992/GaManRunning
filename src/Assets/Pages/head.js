@@ -7,11 +7,31 @@ export default function head(header, lang) {
     const navLang = document.createElement('div');
     navLang.setAttribute('id', 'navLang');
 
+    // The dropdown
+    // Home page
+    const home = document.createElement('button');
+    home.classList.add('navBarButtons');
+
+
+    // Training page
+    const training = document.createElement('button');
+    training.classList.add('navBarButtons');
+
+
+    // About page
+    const about = document.createElement('button');
+    about.classList.add('navBarButtons');
+
+    // Contact page
+    const contact = document.createElement('button');
+    contact.classList.add('navBarButtons');
+
+
     // Side language change
-    let navEn = document.createElement('button');
+    const navEn = document.createElement('button');
     navEn.innerHTML = 'English';
 
-    let navJp = document.createElement('button');
+    const navJp = document.createElement('button');
     navJp.innerHTML = '日本語';
 
     navLang.appendChild(navEn);
@@ -19,18 +39,33 @@ export default function head(header, lang) {
 
     // English NavBar
     if(lang = 'eng') {
-        navBar.textContent = '';
+        home.innerHTML = 'Home';
+        training.innerHTML = 'Training';
+        about.innerHTML = 'About'
+        contact.innerHTML = 'Contact'
 
-
-        header.appendChild(navLang);
+        navBar.appendChild(home);
+        navBar.appendChild(training);
+        navBar.append(about);
+        navBar.append(contact);
+        navBar.appendChild(navLang);
+        header.appendChild(navBar);
         console.log('English')
     }
 
     // Japanese NavBar
     else {
-        navBar.textContent = '';
+        home.innerHTML = 'Home';
+        training.innerHTML = 'Training';
+        about.innerHTML = 'About'
+        contact.innerHTML = 'Contact'
 
-        header.appendChild(navLang);
+        navBar.appendChild(home);
+        navBar.appendChild(training);
+        navBar.append(about);
+        navBar.append(contact);
+        navBar.appendChild(navLang);
+        header.appendChild(navBar);
         console.log('日本語です。')
     }
 }
