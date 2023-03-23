@@ -16,14 +16,38 @@ body {
 .header {
     background-image: linear-gradient(#e26c33, #df5e3a, #302043,black);
     
-    height: 125px;
+    height: 100px;
     width: 100%;
 }
 
-#navBar {
+#navBar, #navLang {
     display: flex;
+    justify-content: space-around;
+    padding: 15px 10px;
 
+    background-color: rgba(0,0,0,.2);
+
+    color: #fff;
+}
+
+#navLang {
+    justify-content: center;
     background-color: transparent;
+}
+
+#navBar button {
+    color: white;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#navBar button:hover { 
+    color: wheat;
+    text-decoration: underline;
 }
 
 /* Mid */

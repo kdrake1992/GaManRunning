@@ -1,10 +1,9 @@
-import head from './head';
+import head from '../head';
 
-export default function enHome(header, mid) {
+export default function jpHome(header, mid) {
 
-    head(header, 'eng');
     const underConstruction = document.createElement('div');
-    underConstruction.innerHTML = 'Work in Progress';
+    underConstruction.innerHTML = '工事中';
     underConstruction.setAttribute('id', 'underConstruction')
     mid.appendChild(underConstruction);
 }

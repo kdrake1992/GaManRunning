@@ -21,7 +21,7 @@ function component() {
     const middle = document.createElement('div');
     middle.classList.add('middle');
     middle.appendChild(mainLogo);
-    mid(header, middle);
+    mid('start', header, middle);
 
     const footer = document.createElement('div');
     footer.classList.add('footer');

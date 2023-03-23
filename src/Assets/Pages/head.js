@@ -1,4 +1,6 @@
-export default function head(header, lang) {
+import mid from './mid';
+
+export default function head(header, lang, mid) {
 
     // Creates the initial div's used in header
     const navBar = document.createElement('div');
@@ -68,4 +70,25 @@ export default function head(header, lang) {
         header.appendChild(navBar);
         console.log('日本語です。')
     }
+
+    // Adds event listener to menu
+    home.addEventListener('click', () => {
+        console.log('home');
+    });
+    training.addEventListener('click', () => {
+        console.log('training');
+    });
+    about.addEventListener('click', () => {
+        console.log('about');
+    });
+    contact.addEventListener('click', () => {
+        console.log('contact');
+    });
+
+    navEn.addEventListener('click', () => {
+        console.log('English');
+    });
+    navJp.addEventListener('click', () => {
+        console.log('Japanese');
+    });
 }
